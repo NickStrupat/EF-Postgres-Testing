@@ -1,8 +1,6 @@
-using System.Runtime.CompilerServices;
-
-public struct InterlockedInt64
+public struct InterlockedInt64(Int64 value)
 {
-    private Int64 value;
+    private Int64 value = value;
     
     /// <summary><inheritdoc cref="Interlocked.Add(ref Int64, Int64)"/></summary>
     /// <param name="value"><inheritdoc cref="Interlocked.Add(ref Int64, Int64)"/></param>
@@ -19,7 +17,7 @@ public struct InterlockedInt64
     
     /// <summary><inheritdoc cref="Interlocked.Read(ref readonly Int64)"/></summary>
     /// <returns><inheritdoc cref="Interlocked.Read(ref readonly Int64)"/></returns>
-    public readonly Int64 Read() => Interlocked.Read(ref Unsafe.AsRef(in value));
+    public readonly Int64 Read() => Interlocked.Read(in value);
     
     /// <summary><inheritdoc cref="Interlocked.Exchange(ref Int64, Int64)"/></summary>
     /// <param name="value"><inheritdoc cref="Interlocked.Exchange(ref Int64, Int64)"/></param>

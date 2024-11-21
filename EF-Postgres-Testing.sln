@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF-Postgres-Testing", "EF-P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{7CD66BAB-B36F-4AF8-A3F9-0D7C3025A3D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.Tests", "NUnit.Tests\NUnit.Tests.csproj", "{98D7ADCB-1755-483C-A0B0-58874AB0687E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Common", "Tests.Common\Tests.Common.csproj", "{6F243018-0EDE-45EE-AFA9-CBD7BE11302D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{7CD66BAB-B36F-4AF8-A3F9-0D7C3025A3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD66BAB-B36F-4AF8-A3F9-0D7C3025A3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD66BAB-B36F-4AF8-A3F9-0D7C3025A3D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D7ADCB-1755-483C-A0B0-58874AB0687E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D7ADCB-1755-483C-A0B0-58874AB0687E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D7ADCB-1755-483C-A0B0-58874AB0687E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D7ADCB-1755-483C-A0B0-58874AB0687E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F243018-0EDE-45EE-AFA9-CBD7BE11302D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F243018-0EDE-45EE-AFA9-CBD7BE11302D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F243018-0EDE-45EE-AFA9-CBD7BE11302D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F243018-0EDE-45EE-AFA9-CBD7BE11302D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
